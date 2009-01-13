@@ -1,0 +1,38 @@
+                            Read Me
+  A TV Player supports many TV sanderds such as DVB,T-DMB,CMMB and so on.
+ExpressTVPlayer player can show SI information: EPG,NVOD and runs on PCs 
+or Embeded devices Linux OS.I hopes more developers can join this project
+ and work together with developers to make ExpressTVPlayer better and 
+ better!
+ 
+Finally we realize the following effects:
+1.ExpressTVPlayer can show EPG and NVOD,
+2.support DVB,T-DMB and CMMB(china),
+3.supprot VRML and realize interactice effect.
+4.ExpressTVPlayer can get data from file that exits harddisk. 
+  ExpressTVPlayer can get ts stream from tuner and rtp/rtsp packets over network.
+5.ExpressTVPlayer run on PC's linux OS or embeded linux OS.
+6.Interface(skin) have good compatibility whith many GUIs.
+7.Codecs can take full advantage of hard device speedup.
+8.ExpressTVPlayer can support a lot CPUs such as ARM,X86,SH-4,MIPS and so on.
+
+Haha, that's great!
+                                      
+Project infrastructure Introduction 
+ audio_out: audio out--decode compressed audio and rend them.
+ codecs: all A/V decoders, avc avs,dra, mepg2,aac/aac+/aac++
+ config: ExpressTVPlayer running configure file.
+ demux: TS, SI demuxer
+ DOC: all documents--help docs ,design docs
+ drivers: something--hard device ,tuner.
+ include: all common *.h file which are included in other modules.
+ input: get data or stream .
+ skin: GUI interface.
+ test:test file,debug.
+ video_out: video frame out.
+ vrml: VRML parser.   
+ 
+The most important thing-license: 
+  ExpressTVPlayer complies with GUN/GPL license. Abouting GUN/GPL license,you
+can read LICENSE file.
+                                                                   
