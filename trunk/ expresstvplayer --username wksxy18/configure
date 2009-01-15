@@ -1,0 +1,60 @@
+#!/bin/sh
+#author song wei
+#mail   wksxy18@gmail.com
+#date   2009-1-13
+
+EXPRESS_TV_BASE_DIR=`pwd`
+
+#unset ExpressTVPlayer enviroment val
+unset EXPRESS_TV_TOP
+unset EXPRESS_TV_INCLUDE
+unset EXPRESS_TV_LIB
+unset EXPRESS_TV_OBJECTS
+unset EXPRESS_TV_DLIB
+unset EXPRESS_TV_SLIB
+
+#set ExpressTVPlayer enviroment val
+export EXPRESS_TV_TOP=$EXPRESS_TV_BASE_DIR
+export EXPRESS_TV_INCLUDE=$EXPRESS_TV_TOP/include
+export EXPRESS_TV_LIB=$EXPRESS_TV_TOP/libs
+export EXPRESS_TV_OBJECTS=.o
+export EXPRESS_TV_DLIB=.so
+export EXPRESS_TV_SLIB=.a
+
+#some macro define!
+_rtp=no
+_avs=no
+_skin=no
+_dra=no
+
+show_help()
+{
+cat<<EOF
+--help |-help|-h Display help information!
+--enable-rtp Support TS stream over rtp protocle.
+--enable-avs Support AVS video decoder.
+--enable-skin TV player have GUI.
+--enable-dra  Support DRA audio decoder
+EOF
+}
+
+for _options do
+    case "$_options" in
+    --help|-help|-h)
+    show_help
+    exit 0;;
+    --enable-rtp) _rtp=yes;;
+    --enable-avs) _avs=yes;;
+    --enable-skin)_skin=yes;;
+    --enable-dra)_dra=yes;;
+    *)
+    echo Unknow cofigure parameter!
+    exit 0;;
+    esac
+done
+
+#system detect!  go on
+    
+
+
+
