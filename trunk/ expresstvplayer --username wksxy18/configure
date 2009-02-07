@@ -9,17 +9,12 @@ EXPRESS_TV_BASE_DIR=`pwd`
 unset EXPRESS_TV_TOP
 unset EXPRESS_TV_INCLUDE
 unset EXPRESS_TV_LIB
-unset EXPRESS_TV_OBJECTS
-unset EXPRESS_TV_DLIB
-unset EXPRESS_TV_SLIB
 
 #set ExpressTVPlayer enviroment val
 export EXPRESS_TV_TOP=$EXPRESS_TV_BASE_DIR
 export EXPRESS_TV_INCLUDE=$EXPRESS_TV_TOP/include
 export EXPRESS_TV_LIB=$EXPRESS_TV_TOP/libs
-export EXPRESS_TV_OBJECTS=.o
-export EXPRESS_TV_DLIB=.so
-export EXPRESS_TV_SLIB=.a
+
 
 #some macro define!
 _rtp=no
