@@ -1,0 +1,3 @@
+export EXPRESS_TV_OBJECTS=.o
+export EXPRESS_TV_DLIB=.so
+export EXPRESS_TV_SLIB=.a
