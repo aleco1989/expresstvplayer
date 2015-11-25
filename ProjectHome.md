@@ -1,0 +1,1 @@
+A TV Player supports many TV sanderds such as DVB,T-DMB,CMMB and so on.This player can show SI information: EPG,NVOD and runs on PCs or Embeded devices Linux OS.I hopes more developers can  join this project and work together to make ExpressTVPlayer better!
